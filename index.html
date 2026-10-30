@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#120d09" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>SOOT &amp; TEARS · 煤与泪</title>
+</head>
+<body>
+    <div id="app">
+        <div id="game-container"></div>
+    </div>
+
+    <div id="touch-controls" aria-hidden="true">
+        <div id="joystick" class="tc-joystick">
+            <div id="joystick-knob" class="tc-knob"></div>
+        </div>
+        <div id="cast-pad" class="tc-cast">
+            <button class="tc-cast-btn tc-up" data-dir="up" aria-label="向上施法">▲</button>
+            <button class="tc-cast-btn tc-left" data-dir="left" aria-label="向左施法">◀</button>
+            <button class="tc-cast-btn tc-right" data-dir="right" aria-label="向右施法">▶</button>
+            <button class="tc-cast-btn tc-down" data-dir="down" aria-label="向下施法">▼</button>
+        </div>
+        <button id="bomb-btn" aria-label="放置炸弹">B</button>
+        <button id="pause-btn" aria-label="暂停">II</button>
+    </div>
+
+    <div id="rotate-overlay">
+        <div class="rotate-card">
+            <div class="rotate-icon">▭</div>
+            <div class="rotate-title">请横屏游玩</div>
+            <div class="rotate-sub">ROTATE YOUR DEVICE</div>
+        </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
