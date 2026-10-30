@@ -297,6 +297,7 @@ export class Hud {
         this.gmButton.on('pointerover', () => this.gmButton.setColor('#e8c870'));
         this.gmButton.on('pointerout', () => this.gmButton.setColor('#c8a87c'));
         this.gmButton.on('pointerdown', () => this.openGm());
+        this.gmButton.setVisible(false)
 
         this.deathLayer = scene.add.container(0, 0).setDepth(200).setVisible(false);
         this.victoryLayer = scene.add.container(0, 0).setDepth(200).setVisible(false);
